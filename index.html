@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#ffffff" />
   <meta property="og:title" content="김강한 & 노지영 결혼합니다" />
-  <meta property="og:description" content="26.05.09 · 12:30 · 뜰안채2한정식" />
-  <meta property="og:image" content="https://yesjiyoung.github.io/wedding/top/N_251121_김강한_노지영_1905+1.jpg" />
+  <meta property="og:description" content="26.05.09.토 · 오후 12:30 · 뜰안채2한정식" />
+  <meta property="og:image" content="https://yesjiyoung.github.io/wedding-invitation/top/N_251121_김강한_노지영_1905+1.jpg" />
   <!-- <link href="https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoFlowerIsland.css" rel="stylesheet"> -->
   <!-- <link href="https://cdn.jsdelivr.net/gh/webfontworld/seoul/SeoulHangang.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.css" rel="stylesheet"> -->
@@ -181,98 +181,6 @@
     .divider{height:1px; background:var(--line); margin:14px 0}
     .small{font-size:12px; color:var(--muted)}
 
-    /* 우리 이야기 타임라인 (중앙 라인 + 좌우 번갈아) */
-    .timeline{
-      position:relative;
-      margin-top:16px;
-      padding:0px 0 6px;
-    }
-    .timeline::before{
-      content:"";
-      position:absolute;
-      top:0;
-      bottom:0;
-      left:50%;
-      width:1px;
-      background:var(--line);
-    }
-    .timeline-item{
-      position:relative;
-      width:100%;
-      display:flex;
-      margin:10px 0;
-      opacity:0;
-      transform:translateY(18px);
-      transition:opacity .55s ease, transform .55s ease;
-    }
-    .timeline-item.visible{
-      opacity:1;
-      transform:translateY(0);
-    }
-    .timeline-item::before{
-      content:"";
-      position:absolute;
-      top:14px;
-      left:50%;
-      width:10px;
-      height:10px;
-      margin-left:-5px;
-      border-radius:50%;
-      background:#fff;
-      border:2px solid var(--accent);
-      box-sizing:border-box;
-    }
-    .timeline-item:first-child::before{
-      top:70px;
-    }
-    .timeline-content{
-      position:relative;
-      max-width:46%;
-      padding:8px 10px;
-      border-radius:12px;
-      background:#fff;
-      box-shadow:0 4px 14px rgba(0,0,0,.04);
-      border:1px solid var(--line);
-    }
-      /* 바로 다음 카드부터 살짝 위로 겹치게 */
-    .timeline-item + .timeline-item .timeline-content{
-      margin-top:-50px;
-    }
-    /* 홀수: 왼쪽, 짝수: 오른쪽 */
-    .timeline-item:nth-child(odd){
-      justify-content:flex-start;
-    }
-    .timeline-item:nth-child(odd) .timeline-content{
-      margin-right:auto;
-      text-align:left;
-    }
-    .timeline-item:nth-child(even){
-      justify-content:flex-end;
-    }
-    .timeline-item:nth-child(even) .timeline-content{
-      margin-left:auto;
-      text-align:right;
-    }
-    .timeline-year{
-      font-weight:600;
-      font-size:13px;
-      letter-spacing:.08em;
-      color:#111827;
-      margin-bottom:4px;
-    }
-    .timeline-text{
-      margin:0 0 6px;
-      font-size:12px;
-      line-height:1.7;
-      color:var(--muted);
-    }
-    .timeline-photo{
-      width:100%;
-      max-height:120px; /* 사진을 조금 작게 */
-      object-fit:cover;
-      border-radius:10px;
-      border:1px solid var(--line);
-    }
     .gallery{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
@@ -284,26 +192,6 @@
       border-radius:14px;
       border:1px solid var(--line);
       cursor:pointer;
-    }
-
-    /* 우리 이야기 카드 자동 접기 */
-    .story-card{
-      cursor:pointer;
-    }
-    .story-card.collapsed .timeline,
-    .story-card.collapsed .desc,
-    .story-card.collapsed .small{
-      display:none;
-    }
-
-    .story-toggle-help{
-      font-size:12px;
-      color:var(--muted);
-      text-align:center;
-      margin-top:10px; text-align:center;
-    }
-    .story-card:not(.collapsed) .story-toggle-help{
-      display:none;
     }
 
     /* 스크롤 등장 애니메이션용 초대 카드 */
@@ -500,85 +388,8 @@
           저희 두 사람이 사랑으로 한 길을 걷고자 합니다.<br/>
           소중한 분들과 좋은 날 함께 즐기고, <br/>
           맛있는 식사로 감사의 마음을 전하고 싶습니다.<br/>
-          축복의 자리에서 함께해 주세요.
+          축복의 자리에 함께해 주세요.
         </p>
-      </div>
-    </section>
-
-    <!-- 우리 이야기 타임라인 -->
-    <section class="section">
-      <div class="card story-card">
-        <h2>♡ 우리 이야기 ♡</h2>
-        <div class="story-toggle-help">클릭하여 다시 보기</div>
-        <p class="desc">
-          2018년부터 지금까지,<br/>
-          우리가 함께 걸어온 시간을 한 장 한 장 담았어요.
-        </p>
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2018</div>
-              <p class="timeline-text">🏫 캠퍼스 커플로 시작했어요!</p>
-              <img src="./history/2018.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2018 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2019</div>
-              <p class="timeline-text">👨‍🎓 축 강한이 대학 졸업 </p>
-              <img src="./history/2019.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2019 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2020</div>
-              <p class="timeline-text">🌸 매년 함께 벚꽃사진도 찍고 </p>
-              <img src="./history/2020.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2020 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2021</div>
-              <p class="timeline-text">📸 인생네컷 사진도 많이 찍고</p>
-              <img src="./history/2021.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2021 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2022</div>
-              <p class="timeline-text">👩‍🎓 지영이도 졸업하고</p>
-              <img src="./history/2022.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2022 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2023</div>
-              <p class="timeline-text">🌍 여행도 많이 다니고</p>
-              <img src="./history/2023.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2023 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2024</div>
-              <p class="timeline-text">💍 깜짝 프로포즈도 받고 😭 </p>
-              <img src="./history/2024.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2024 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2025</div>
-              <p class="timeline-text">🏃‍♂️ 마라톤도 하고 </p>
-              <img src="./history/2025.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2025 우리 사진">
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-content">
-              <div class="timeline-year">2026</div>
-              <p class="timeline-text">🤵🏻‍♂️❤️👰🏻‍♀️ 마침내.. <br>저희 결혼하게 되었습니다! </p>
-              <img src="./history/2026.png" class="timeline-photo" loading="lazy" decoding="async" alt="2026 우리 사진">
-            </div>
-          </div>
-        </div>
       </div>
     </section>
 
@@ -588,7 +399,7 @@
         <h2>♡ 일정 · 장소 ♡</h2>
         <div class="desc">
           <b id="">2026년 05월 09일 오후 12시 30분</b><br/>
-          <b id="">뜰안채2한정식</b><br/>
+          <b id="">뜰안채2한정식 (야외예식장)</b><br/>
           <span id="addrLine">경기 의왕시 양지편로 39-18</span>
         </div>
 
@@ -625,8 +436,10 @@
           <img src="./assets/gallery_7.png" data-index="6" loading="lazy" decoding="async" alt="gallery 7">
           <img src="./assets/gallery_8.png" data-index="7" loading="lazy" decoding="async" alt="gallery 8">
           <img src="./assets/gallery_9.png" data-index="8" loading="lazy" decoding="async" alt="gallery 9">
+          <img src="./assets/gallery_10.png" data-index="9" loading="lazy" decoding="async" alt="gallery 10">
+          <img src="./assets/gallery_11.png" data-index="10" loading="lazy" decoding="async" alt="gallery 11">
+          <img src="./assets/gallery_12.png" data-index="11" loading="lazy" decoding="async" alt="gallery 12">
         </div>
-        <button class="btn" id="openAllPhotosBtn" style="margin-top:10px">사진 더 보기</button>
         
         <div id="imgModal" class="modalOverlay">
           <div class="modalWrap">
@@ -647,24 +460,6 @@
       </div>
     </section>
 
-    <!-- 연락처 -->
-    <section class="section">
-      <div class="card">
-        <h2>연락처</h2>
-        <div class="desc">
-          신랑: <span id="groomPhoneText">010-4731-1902</span><br/>
-          신부: <span id="bridePhoneText">010-3461-1259</span>
-        </div>
-        <div class="divider"></div>
-        <div class="grid2">
-          <a class="btn" id="callGroom" href="tel:01047311902">신랑에게 전화</a>
-          <a class="btn" id="callBride" href="tel:01034611259">신부에게 전화</a>
-          <a class="btn" id="smsGroom" href="sms:01047311902">신랑에게 문자</a>
-          <a class="btn" id="smsBride" href="sms:01034611259">신부에게 문자</a>
-        </div>
-      </div>
-    </section>
-
     <!-- 마음 전하실 곳 -->
     <section class="section">
       <div class="card">
@@ -678,7 +473,7 @@
               신랑측
             </div>
             <button class="btn" data-copy="우리은행 388-080-33194">
-              우리은행 388-080-33194 (김종환)
+              우리은행 388-080-33194 (김종환, 강영숙)
             </button>
             <button class="btn" data-copy="우리은행 1002-384-190200">
               우리은행 1002-384-190200 (김강한)
@@ -720,8 +515,6 @@
       weddingISO: "2026-05-09T12:30:00+09:00", // KST
       hallText: "뜰안채2한정식",
       addressText: "경기 의왕시 양지편로 39-18",
-      groomPhone: "01047311902",
-      bridePhone: "01034611259",
       // 지도: 네이버/카카오/구글 중 택1로 바꿔 쓰세요
       mapUrl: "https://map.naver.com/v5/search/뜰안채2한정식"
     };
@@ -800,24 +593,8 @@
       setText("dateLine", f.line);
       setText("ddayChip", calcDday(CONFIG.weddingISO));
 
-      setText("groomPhoneText", formatPhone(CONFIG.groomPhone));
-      setText("bridePhoneText", formatPhone(CONFIG.bridePhone));
-
-      setHref("callGroom", `tel:${CONFIG.groomPhone}`);
-      setHref("callBride", `tel:${CONFIG.bridePhone}`);
-      setHref("smsGroom", `sms:${CONFIG.groomPhone}`);
-      setHref("smsBride", `sms:${CONFIG.bridePhone}`);
-
       setHref("mapBtn", CONFIG.mapUrl);
       setText("year", String(new Date().getFullYear()));
-    }
-
-    function formatPhone(p){
-      // 01012345678 -> 010-1234-5678
-      const s = String(p).replace(/[^0-9]/g,"");
-      if(s.length === 11) return `${s.slice(0,3)}-${s.slice(3,7)}-${s.slice(7)}`;
-      if(s.length === 10) return `${s.slice(0,3)}-${s.slice(3,6)}-${s.slice(6)}`;
-      return p;
     }
 
     // ====== 버튼 이벤트 ======
@@ -866,13 +643,7 @@
     "./assets/gallery_9.png",
     "./assets/gallery_10.png",
     "./assets/gallery_11.png",
-    "./assets/gallery_12.png",
-    "./assets/gallery_13.png",
-    "./assets/gallery_14.png",
-    "./assets/gallery_15.png",
-    "./assets/gallery_16.png",
-    "./assets/gallery_17.png",
-    "./assets/gallery_18.png",
+    "./assets/gallery_12.png"
     ];
 
     let currentIndex = 0;
@@ -912,14 +683,6 @@
       const idx = Number(img.dataset.index || 0);
       openAt(idx);
     });
-
-    // "사진 더 보기" 버튼: 전체 사진 뷰어를 첫 번째 사진부터 열기
-    const openAllPhotosBtn = document.getElementById("openAllPhotosBtn");
-    if(openAllPhotosBtn){
-      openAllPhotosBtn.addEventListener("click", ()=>{
-        openAt(0);
-      });
-    }
 
     // 일정/장소 예식장 안내 사진 클릭 시 크게 보기 (갤러리와 같은 모달 재사용)
     if(locationPhotoEl){
@@ -975,8 +738,8 @@
     }, {passive:true});
 
 
-    // 타임라인 + 초대글 카드 스크롤 등장 애니메이션
-    const fadeEls = document.querySelectorAll(".timeline-item, .invite-card");
+    // 초대글 카드 스크롤 등장 애니메이션
+    const fadeEls = document.querySelectorAll(".invite-card");
     if(fadeEls.length){
       if("IntersectionObserver" in window){
         const io = new IntersectionObserver((entries)=>{
@@ -993,43 +756,6 @@
         fadeEls.forEach(el=>el.classList.add("visible"));
       }
     }
-
-    // 우리 이야기 섹션: 다 보고 화면에서 사라지면 자동 접기
-    const storyCard = document.querySelector(".story-card");
-    const storySection = storyCard ? storyCard.closest("section") : null;
-    if(storySection && "IntersectionObserver" in window){
-      let storyCollapsed = false;
-      const storyObserver = new IntersectionObserver((entries)=>{
-        entries.forEach(entry=>{
-          if(!entry.isIntersecting){
-            const rect = entry.boundingClientRect;
-            // 섹션 전체가 화면 위로 완전히 사라진 경우만 접기
-            if(rect.bottom < 0 && !storyCollapsed){
-              const prevScroll = window.scrollY;
-              const prevHeight = document.documentElement.scrollHeight;
-              storyCard.classList.add("collapsed");
-              storyCollapsed = true;
-              // 접으면 문서 높이가 줄어들어 scrollY가 그대로면 하단으로 튀는 현상 보정
-              requestAnimationFrame(()=>{
-                const nextHeight = document.documentElement.scrollHeight;
-                const delta = prevHeight - nextHeight;
-                if(delta > 0){
-                  window.scrollTo(0, Math.max(0, prevScroll - delta));
-                }
-              });
-            }
-          }
-        });
-      }, {threshold:0});
-      storyObserver.observe(storySection);
-
-      // 카드를 탭하면 다시 펼치기/접기
-      storyCard.addEventListener("click", ()=>{
-        storyCollapsed = !storyCollapsed;
-        storyCard.classList.toggle("collapsed", storyCollapsed);
-      });
-    }
-
 
     // 계좌 버튼 복사
     document.querySelectorAll("[data-copy]").forEach(btn=>{
