@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:title" content="김강한 & 노지영 결혼합니다" />
+  <meta property="og:description" content="26.05.09 · 12:30 · 뜰안채2한정식" />
+  <meta property="og:image" content="https://yesjiyoung.github.io/wedding/top/N_251121_김강한_노지영_1905+1.jpg" />
+  <!-- <link href="https://cdn.jsdelivr.net/gh/webfontworld/mapo/MapoFlowerIsland.css" rel="stylesheet"> -->
+  <!-- <link href="https://cdn.jsdelivr.net/gh/webfontworld/seoul/SeoulHangang.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/webfontworld/jeju/JejuMyeongjo.css" rel="stylesheet"> -->
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,
+  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
+  <text y='0.9em' font-size='90'>♡</text>
+  </svg>">
+  <title>강한·지영 결혼식에 초대합니다</title>
+
+  <style>
+    @import url('//fonts.googleapis.com/earlyaccess/jejumyeongjo.css');
+    :root{
+      --bg:#fbfaf8;
+      --card:#ffffff;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --line:#e5e7eb;
+      --accent:#36780a;
+      --radius:18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.06);
+      --max: 520px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      /* font-family: ui-sans-serif, system-ui, -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Segoe UI", sans-serif; */
+      color:var(--text);
+      background:linear-gradient(180deg, #fff, var(--bg));
+    }
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:18px 16px 40px;}
+
+    .hero {
+      background:
+        radial-gradient(rgba(0,0,0,.02) 1px, transparent 1px);
+      background-size: 4px 4px;
+      padding: 0 0 20px;
+      font-family: 'Jeju Myeongjo', serif;
+    }
+
+    .hero-inner {
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    /* 사진: wrap 좌우 패딩까지 꽉 채움 */
+    .hero-photo {
+      margin-left: -16px;
+      margin-right: -16px;
+      width: calc(100% + 32px);
+      padding: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .hero-photo img {
+      width: 100%;
+      display: block;
+      vertical-align: bottom;
+    }
+
+    /* 텍스트 영역 */
+    .hero-text {
+      margin-top: 40px;
+      padding: 0 20px;
+
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: 20px;
+    }
+
+
+    /* 왼쪽 문구 */
+    .hero-left {
+      text-align: left;
+    }
+
+    .hero-msg {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 0 0 12px;
+      color: #444;
+    }
+
+    .hero-date {
+      font-size: 15px;
+      color: #666;
+    }
+
+
+    /* 오른쪽 이름 */
+    .hero-names {
+      text-align: right;
+      font-size: 34px;
+      line-height: 1.3;
+      letter-spacing: 6px;
+      color: #333;
+      white-space: nowrap;
+    }
+
+
+    .kicker{letter-spacing:.18em; font-size:12px; opacity:.9}
+    h1{margin:10px 0 6px; font-size:28px; line-height:1.2}
+    .meta{font-size:14px; opacity:.95}
+    .chip{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:10px 12px; border-radius:999px;
+      background:rgba(255,255,255,.14);
+      backdrop-filter: blur(8px);
+      margin-top:12px;
+      border:1px solid rgba(255,255,255,.18);
+      font-size:13px;
+    }
+    .section{margin-top:16px;}
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow: 0 6px 20px rgba(0,0,0,.04);
+      padding:16px;
+      font-family: 'Jeju Myeongjo', serif;
+    }
+    .card h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:-.02em;
+      text-align: center;
+      color:var(--accent);
+    }
+
+    .card .desc {
+      text-align: center;
+      line-height: 1.8;
+      margin-top: 8px;
+    }
+
+    #inviteMsg {
+      text-align: center;
+      line-height: 1.9;
+      margin-top: 12px;
+    }
+    
+    .desc{color:var(--muted); font-size:14px; line-height:1.7}
+    .row{display:flex; gap:10px; flex-wrap:wrap}
+    .btn{
+      width:100%;
+      display:flex; align-items:center; justify-content:center;
+      gap:8px;
+      border-radius:14px;
+      padding:12px 14px;
+      border:1px solid var(--line);
+      background:#fff;
+      cursor:pointer;
+      font-size:14px;
+      font-family: 'Jeju Myeongjo', serif;
+    }
+    .btn.primary{
+      background:var(--accent);
+      color:#fff;
+      border-color:var(--accent);
+    }
+    #shareBtn{
+      background:#374151;
+      border-color:#374151;
+      color:#fff;
+    }
+    .btn:active{transform:translateY(1px)}
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    .grid3{display:grid; grid-template-columns:repeat(3, 1fr); gap:10px}
+    .divider{height:1px; background:var(--line); margin:14px 0}
+    .small{font-size:12px; color:var(--muted)}
+
+    /* 우리 이야기 타임라인 (중앙 라인 + 좌우 번갈아) */
+    .timeline{
+      position:relative;
+      margin-top:16px;
+      padding:0px 0 6px;
+    }
+    .timeline::before{
+      content:"";
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:50%;
+      width:1px;
+      background:var(--line);
+    }
+    .timeline-item{
+      position:relative;
+      width:100%;
+      display:flex;
+      margin:10px 0;
+      opacity:0;
+      transform:translateY(18px);
+      transition:opacity .55s ease, transform .55s ease;
+    }
+    .timeline-item.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+    .timeline-item::before{
+      content:"";
+      position:absolute;
+      top:14px;
+      left:50%;
+      width:10px;
+      height:10px;
+      margin-left:-5px;
+      border-radius:50%;
+      background:#fff;
+      border:2px solid var(--accent);
+      box-sizing:border-box;
+    }
+    .timeline-item:first-child::before{
+      top:70px;
+    }
+    .timeline-content{
+      position:relative;
+      max-width:46%;
+      padding:8px 10px;
+      border-radius:12px;
+      background:#fff;
+      box-shadow:0 4px 14px rgba(0,0,0,.04);
+      border:1px solid var(--line);
+    }
+      /* 바로 다음 카드부터 살짝 위로 겹치게 */
+    .timeline-item + .timeline-item .timeline-content{
+      margin-top:-50px;
+    }
+    /* 홀수: 왼쪽, 짝수: 오른쪽 */
+    .timeline-item:nth-child(odd){
+      justify-content:flex-start;
+    }
+    .timeline-item:nth-child(odd) .timeline-content{
+      margin-right:auto;
+      text-align:left;
+    }
+    .timeline-item:nth-child(even){
+      justify-content:flex-end;
+    }
+    .timeline-item:nth-child(even) .timeline-content{
+      margin-left:auto;
+      text-align:right;
+    }
+    .timeline-year{
+      font-weight:600;
+      font-size:13px;
+      letter-spacing:.08em;
+      color:#111827;
+      margin-bottom:4px;
+    }
+    .timeline-text{
+      margin:0 0 6px;
+      font-size:12px;
+      line-height:1.7;
+      color:var(--muted);
+    }
+    .timeline-photo{
+      width:100%;
+      max-height:120px; /* 사진을 조금 작게 */
+      object-fit:cover;
+      border-radius:10px;
+      border:1px solid var(--line);
+    }
+    .gallery{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:8px;
+    }
+    .gallery img{
+      width:100%; aspect-ratio:1/1;
+      object-fit:cover;
+      border-radius:14px;
+      border:1px solid var(--line);
+      cursor:pointer;
+    }
+
+    /* 우리 이야기 카드 자동 접기 */
+    .story-card{
+      cursor:pointer;
+    }
+    .story-card.collapsed .timeline,
+    .story-card.collapsed .desc,
+    .story-card.collapsed .small{
+      display:none;
+    }
+
+    .story-toggle-help{
+      font-size:12px;
+      color:var(--muted);
+      text-align:center;
+      margin-top:10px; text-align:center;
+    }
+    .story-card:not(.collapsed) .story-toggle-help{
+      display:none;
+    }
+
+    /* 스크롤 등장 애니메이션용 초대 카드 */
+    .invite-card{
+      opacity:0;
+      transform:translateY(18px);
+      transition:opacity .55s ease, transform .55s ease;
+    }
+    .invite-card.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    /* 전체 화면 이미지 보기 오버레이 */
+    .modalOverlay{
+      position:fixed;
+      inset:0;
+      background:rgba(0,0,0,.92);
+      z-index:999;
+      display:none; /* 기본은 안 보이게 */
+      align-items:center;
+      justify-content:center;
+    }
+    .modalOverlay.open{
+      display:flex; /* open 클래스가 붙었을 때만 전체 화면으로 표시 */
+    }
+    .modalimg{width:100%; height:auto; display:block}
+    .toast{
+      position:fixed;
+      left:50%;
+      bottom:22px;
+      transform:translateX(-50%);
+      background:rgba(17,24,39,.92);
+      color:#fff;
+      padding:10px 12px;
+      border-radius:999px;
+      font-size:13px;
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .2s ease;
+    }
+    .toast.show{opacity:1}
+    footer{margin-top:18px; text-align:center; color:var(--muted); font-size:12px}
+
+    .modalWrap{
+      position:relative;
+      background:#000;
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    /* 일정·장소 안내 사진: 한 장만 보기 (방향 버튼 숨김) */
+    .modalWrap.is-single .navBtn{
+      display:none;
+    }
+
+    .modalFigure{
+      margin:0;
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .modalimg{
+      max-width:100%;
+      max-height:100%;
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      display:block;
+    }
+
+    .navBtn{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      width:44px;
+      height:44px;
+      border-radius:999px;
+      border:none;
+      background:transparent;
+      color:#fff;
+      font-size:26px;
+      line-height:1;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-shadow:0 1px 3px rgba(0,0,0,.45);
+      transition:background .15s ease;
+    }
+    .navBtn:hover{
+      background:rgba(255,255,255,.12);
+    }
+    .navBtn:active{
+      background:rgba(255,255,255,.06);
+    }
+
+    .navBtn.left{ left:10px; }
+    .navBtn.right{ right:10px; }
+
+    .closeBtn{
+      position:absolute;
+      top:10px;
+      right:10px;
+      width:40px;
+      height:40px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.25);
+      background:rgba(0,0,0,.35);
+      color:#fff;
+      font-size:18px;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      backdrop-filter: blur(6px);
+    }
+
+    .modalCaption{
+      position:absolute;
+      bottom:10px;
+      left:50%;
+      transform:translateX(-50%);
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(0,0,0,.35);
+      border:1px solid rgba(255,255,255,.18);
+      color:#fff;
+      font-size:12px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- HERO -->
+    <!-- <section class="hero" aria-label="대표 이미지">
+      <img id="heroImg" src="./assets/N_251121_김강한_노지영_1905+1.jpg" alt="웨딩 대표 사진"  fetchpriority="high" decoding="async" />
+      <div class="overlay"></div>
+      <div class="title">
+        <div class="kicker">WEDDING INVITATION</div>
+        <h1><span id="groomName">신랑</span> · <span id="brideName">신부</span></h1>
+        <div class="meta">
+          <span id="dateText">2026년 05월 16일 (토)</span> ·
+          <span id="timeText">오후 12시 30분</span><br/>
+          <span id="hallText">OO웨딩홀 3층 OO홀</span>
+        </div>
+        <div class="chip" id="ddayChip">D-</div>
+      </div>
+    </section> -->
+    <section class="hero">
+      <div class="hero-inner">
+    
+        <div class="hero-photo">
+          <!-- <img id="heroImg" src="./assets/N_251121_김강한_노지영_1905+1.jpg" alt="웨딩 대표 사진"  fetchpriority="high" decoding="async" /> -->
+          <img id="heroImg" src="./hero/hero_img.png" alt="웨딩 대표 사진"  fetchpriority="high" decoding="async" />
+        </div>
+    
+        <div class="hero-text">
+
+          <div class="hero-left">
+            <p class="hero-msg">
+              저희 두 사람 <br> 드디어 결혼합니다 💍 <br>
+            </p>
+        
+            <p class="hero-date">
+              2026.05.09 토 오후 12:30
+            </p>
+          </div>
+        
+          <div class="hero-names">
+            강한<br>
+            지영
+          </div>
+        
+        </div>
+        
+    
+      </div>
+    </section>
+    
+
+    <!-- 초대글 -->
+    <section class="section">
+      <div class="card invite-card">
+        <h2>♡ 초대합니다 ♡ </h2>
+        <p class="desc" id="inviteMsg">
+          저희 두 사람이 사랑으로 한 길을 걷고자 합니다.<br/>
+          소중한 분들과 좋은 날 함께 즐기고, <br/>
+          맛있는 식사로 감사의 마음을 전하고 싶습니다.<br/>
+          축복의 자리에서 함께해 주세요.
+        </p>
+      </div>
+    </section>
+
+    <!-- 우리 이야기 타임라인 -->
+    <section class="section">
+      <div class="card story-card">
+        <h2>♡ 우리 이야기 ♡</h2>
+        <div class="story-toggle-help">클릭하여 다시 보기</div>
+        <p class="desc">
+          2018년부터 지금까지,<br/>
+          우리가 함께 걸어온 시간을 한 장 한 장 담았어요.
+        </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2018</div>
+              <p class="timeline-text">🏫 캠퍼스 커플로 시작했어요!</p>
+              <img src="./history/2018.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2018 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2019</div>
+              <p class="timeline-text">👨‍🎓 축 강한이 대학 졸업 </p>
+              <img src="./history/2019.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2019 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2020</div>
+              <p class="timeline-text">🌸 매년 함께 벚꽃사진도 찍고 </p>
+              <img src="./history/2020.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2020 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2021</div>
+              <p class="timeline-text">📸 인생네컷 사진도 많이 찍고</p>
+              <img src="./history/2021.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2021 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2022</div>
+              <p class="timeline-text">👩‍🎓 지영이도 졸업하고</p>
+              <img src="./history/2022.jpeg" class="timeline-photo" loading="lazy" decoding="async" alt="2022 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2023</div>
+              <p class="timeline-text">🌍 여행도 많이 다니고</p>
+              <img src="./history/2023.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2023 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2024</div>
+              <p class="timeline-text">💍 깜짝 프로포즈도 받고 😭 </p>
+              <img src="./history/2024.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2024 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2025</div>
+              <p class="timeline-text">🏃‍♂️ 마라톤도 하고 </p>
+              <img src="./history/2025.jpg" class="timeline-photo" loading="lazy" decoding="async" alt="2025 우리 사진">
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <div class="timeline-year">2026</div>
+              <p class="timeline-text">🤵🏻‍♂️❤️👰🏻‍♀️ 마침내.. <br>저희 결혼하게 되었습니다! </p>
+              <img src="./history/2026.png" class="timeline-photo" loading="lazy" decoding="async" alt="2026 우리 사진">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 일정/장소 -->
+    <section class="section">
+      <div class="card">
+        <h2>♡ 일정 · 장소 ♡</h2>
+        <div class="desc">
+          <b id="">2026년 05월 09일 오후 12시 30분</b><br/>
+          <b id="">뜰안채2한정식</b><br/>
+          <span id="addrLine">경기 의왕시 양지편로 39-18</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="grid3">
+          <button class="btn" id="shareBtn">공유하기</button>
+          <button class="btn" id="copyAddrBtn">주소 복사</button>
+          <a class="btn" id="mapBtn" target="_blank" rel="noreferrer">지도 열기</a>
+        </div>
+
+        <div class="divider" style="margin-top:16px; margin-bottom:12px;"></div>
+
+        <img id="locationPhoto"
+             src="./come/come_here.jpg"
+             alt="예식장 안내 사진"
+             style="width:100%; border-radius:14px; border:1px solid var(--line); object-fit:cover; cursor:pointer;">
+        <div class="small" style="margin-top:10px; text-align:center;">사진을 누르면 크게 볼 수 있어요.</div>
+      </div>
+    </section>
+
+    <!-- 갤러리 -->
+    <section class="section">
+      <div class="card">
+        <h2>♡ 갤러리 ♡</h2>
+        <div class="gallery" id="gallery">
+          <!-- 썸네일은 9장만 보여주고, 모달에서는 전체 사진을 넘길 수 있도록 구성 -->
+          <img src="./assets/gallery_1.png" data-index="0" loading="lazy" decoding="async" alt="gallery 1">
+          <img src="./assets/gallery_2.png" data-index="1" loading="lazy" decoding="async" alt="gallery 2">
+          <img src="./assets/gallery_3.png" data-index="2" loading="lazy" decoding="async" alt="gallery 3">
+          <img src="./assets/gallery_4.png" data-index="3" loading="lazy" decoding="async" alt="gallery 4">
+          <img src="./assets/gallery_5.png" data-index="4" loading="lazy" decoding="async" alt="gallery 5">
+          <img src="./assets/gallery_6.png" data-index="5" loading="lazy" decoding="async" alt="gallery 6">
+          <img src="./assets/gallery_7.png" data-index="6" loading="lazy" decoding="async" alt="gallery 7">
+          <img src="./assets/gallery_8.png" data-index="7" loading="lazy" decoding="async" alt="gallery 8">
+          <img src="./assets/gallery_9.png" data-index="8" loading="lazy" decoding="async" alt="gallery 9">
+        </div>
+        <button class="btn" id="openAllPhotosBtn" style="margin-top:10px">사진 더 보기</button>
+        
+        <div id="imgModal" class="modalOverlay">
+          <div class="modalWrap">
+            <button class="navBtn left" type="button" id="prevBtn" aria-label="이전 사진">‹</button>
+        
+            <figure class="modalFigure">
+              <img class="modalimg" id="modalImg" alt="확대 이미지">
+              <figcaption class="modalCaption" id="modalCaption"></figcaption>
+            </figure>
+        
+            <button class="navBtn right" type="button" id="nextBtn" aria-label="다음 사진">›</button>
+        
+            <button class="closeBtn" type="button" id="closeBtn" aria-label="닫기">✕</button>
+          </div>
+        </div>
+        
+        <div class="small" style="margin-top:10px; text-align:center;">사진을 누르면 크게 볼 수 있어요.</div>
+      </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section class="section">
+      <div class="card">
+        <h2>연락처</h2>
+        <div class="desc">
+          신랑: <span id="groomPhoneText">010-4731-1902</span><br/>
+          신부: <span id="bridePhoneText">010-3461-1259</span>
+        </div>
+        <div class="divider"></div>
+        <div class="grid2">
+          <a class="btn" id="callGroom" href="tel:01047311902">신랑에게 전화</a>
+          <a class="btn" id="callBride" href="tel:01034611259">신부에게 전화</a>
+          <a class="btn" id="smsGroom" href="sms:01047311902">신랑에게 문자</a>
+          <a class="btn" id="smsBride" href="sms:01034611259">신부에게 문자</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 마음 전하실 곳 -->
+    <section class="section">
+      <div class="card">
+        <h2>마음 전하실 곳</h2>
+        <div class="desc">계좌번호를 누르면 복사됩니다.</div>
+        <div class="divider"></div>
+
+        <div style="display:flex; flex-direction:column; gap:10px;">
+          <div>
+            <div class="small" style="text-align:left; margin-bottom:4px; color:var(--accent);">
+              신랑측
+            </div>
+            <button class="btn" data-copy="우리은행 388-080-33194">
+              우리은행 388-080-33194 (김종환)
+            </button>
+            <button class="btn" data-copy="우리은행 1002-384-190200">
+              우리은행 1002-384-190200 (김강한)
+            </button>
+          </div>
+
+          <div class="divider"></div>
+
+          <div>
+            <div class="small" style="text-align:left; margin-bottom:4px; color:var(--accent);">
+              신부측
+            </div>
+            <button class="btn" data-copy="SC제일은행 609-20-122470">
+              SC제일은행 609-20-122470 (노상래)
+            </button>
+            <button class="btn" data-copy="기업은행 010-9168-7379">
+              기업은행 010-9168-7379 (명경희)
+            </button>
+            <button class="btn" data-copy="카카오뱅크 3333-22-0265137">
+              카카오뱅크 3333-22-0265137 (노지영)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="year"></span> made by kanghan & jiyoung
+    </footer>
+  </div>
+
+  <div class="toast" id="toast">복사했어요</div>
+
+  <script>
+    // ====== 여기만 바꾸면 됩니다 ======
+    const CONFIG = {
+      groomName: "김강한",
+      brideName: "노지영",
+      weddingISO: "2026-05-09T12:30:00+09:00", // KST
+      hallText: "뜰안채2한정식",
+      addressText: "경기 의왕시 양지편로 39-18",
+      groomPhone: "01047311902",
+      bridePhone: "01034611259",
+      // 지도: 네이버/카카오/구글 중 택1로 바꿔 쓰세요
+      mapUrl: "https://map.naver.com/v5/search/뜰안채2한정식"
+    };
+
+    // ====== 유틸 ======
+    const $ = (id) => document.getElementById(id);
+    const toast = $("toast");
+    function showToast(msg="복사했어요"){
+      toast.textContent = msg;
+      toast.classList.add("show");
+      setTimeout(()=>toast.classList.remove("show"), 1400);
+    }
+    async function copyText(text){
+      try{
+        await navigator.clipboard.writeText(text);
+        showToast("복사했어요");
+      }catch(e){
+        // fallback
+        const ta = document.createElement("textarea");
+        ta.value = text;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+        showToast("복사했어요");
+      }
+    }
+
+    // ====== 초기 렌더 ======
+    function formatKoreanDate(iso){
+      const d = new Date(iso);
+      const weekdays = ["일","월","화","수","목","금","토"];
+      const y = d.getFullYear();
+      const m = String(d.getMonth()+1).padStart(2,"0");
+      const day = String(d.getDate()).padStart(2,"0");
+      const w = weekdays[d.getDay()];
+      let hh = d.getHours();
+      const mm = String(d.getMinutes()).padStart(2,"0");
+      const ampm = hh < 12 ? "오전" : "오후";
+      hh = hh % 12; if(hh === 0) hh = 12;
+      return {
+        dateText: `${y}년 ${m}월 ${day}일 (${w})`,
+        timeText: `${ampm} ${hh}시 ${mm}분`,
+        line: `${y}-${m}-${day} ${String(d.getHours()).padStart(2,"0")}:${mm}`
+      };
+    }
+
+    function calcDday(iso){
+      const now = new Date();
+      const target = new Date(iso);
+      const diff = target.getTime() - now.getTime();
+      const days = Math.ceil(diff / (1000*60*60*24));
+      if(days > 0) return `D-${days}`;
+      if(days === 0) return "D-DAY";
+      return `D+${Math.abs(days)}`;
+    }
+
+    function setContacts(){
+      const setText = (id, text) => {
+        const el = $(id);
+        if (el) el.textContent = text;
+      };
+      const setHref = (id, href) => {
+        const el = $(id);
+        if (el) el.href = href;
+      };
+
+      setText("groomName", CONFIG.groomName);
+      setText("brideName", CONFIG.brideName);
+      setText("hallText", CONFIG.hallText);
+      setText("addrLine", CONFIG.addressText);
+
+      const f = formatKoreanDate(CONFIG.weddingISO);
+      setText("dateText", f.dateText);
+      setText("timeText", f.timeText);
+      setText("dateLine", f.line);
+      setText("ddayChip", calcDday(CONFIG.weddingISO));
+
+      setText("groomPhoneText", formatPhone(CONFIG.groomPhone));
+      setText("bridePhoneText", formatPhone(CONFIG.bridePhone));
+
+      setHref("callGroom", `tel:${CONFIG.groomPhone}`);
+      setHref("callBride", `tel:${CONFIG.bridePhone}`);
+      setHref("smsGroom", `sms:${CONFIG.groomPhone}`);
+      setHref("smsBride", `sms:${CONFIG.bridePhone}`);
+
+      setHref("mapBtn", CONFIG.mapUrl);
+      setText("year", String(new Date().getFullYear()));
+    }
+
+    function formatPhone(p){
+      // 01012345678 -> 010-1234-5678
+      const s = String(p).replace(/[^0-9]/g,"");
+      if(s.length === 11) return `${s.slice(0,3)}-${s.slice(3,7)}-${s.slice(7)}`;
+      if(s.length === 10) return `${s.slice(0,3)}-${s.slice(3,6)}-${s.slice(6)}`;
+      return p;
+    }
+
+    // ====== 버튼 이벤트 ======
+    $("copyAddrBtn").addEventListener("click", ()=> copyText(CONFIG.addressText));
+    $("shareBtn").addEventListener("click", async ()=>{
+      const shareData = {
+        title: `${CONFIG.groomName} · ${CONFIG.brideName} 결혼합니다`,
+        text: `${formatKoreanDate(CONFIG.weddingISO).dateText} ${formatKoreanDate(CONFIG.weddingISO).timeText}\n${CONFIG.hallText}\n${CONFIG.addressText}`,
+        url: location.href
+      };
+      if(navigator.share){
+        try { await navigator.share(shareData); }
+        catch(e){ /* 사용자가 취소 */ }
+      } else {
+        await copyText(location.href);
+        showToast("링크를 복사했어요");
+      }
+    });
+
+    
+
+    // 갤러리 모달
+    // ====== 갤러리: 좌/우 넘기기 + 스와이프 ======
+    const modal = $("imgModal");
+    const modalWrap = modal?.querySelector(".modalWrap");
+    const modalImg = $("modalImg");
+    const modalCaption = $("modalCaption");
+    const prevBtn = $("prevBtn");
+    const nextBtn = $("nextBtn");
+    const closeBtn = $("closeBtn");
+
+    // 썸네일 영역
+    const galleryEl = $("gallery");
+    const locationPhotoEl = $("locationPhoto");
+
+    // 모달에서 돌릴 전체 사진 목록 (썸네일로 보이는 9장 + 숨겨진 사진들)
+    const ALL_IMAGES = [
+    "./assets/gallery_1.png",
+    "./assets/gallery_2.png",
+    "./assets/gallery_3.png",
+    "./assets/gallery_4.png",
+    "./assets/gallery_5.png",
+    "./assets/gallery_6.png",
+    "./assets/gallery_7.png",
+    "./assets/gallery_8.png",
+    "./assets/gallery_9.png",
+    "./assets/gallery_10.png",
+    "./assets/gallery_11.png",
+    "./assets/gallery_12.png",
+    "./assets/gallery_13.png",
+    "./assets/gallery_14.png",
+    "./assets/gallery_15.png",
+    "./assets/gallery_16.png",
+    "./assets/gallery_17.png",
+    "./assets/gallery_18.png",
+    ];
+
+    let currentIndex = 0;
+
+    function isModalOpen(){
+      return modal.classList.contains("open");
+    }
+
+    function openAt(idx){
+      modalWrap?.classList.remove("is-single");
+      const len = ALL_IMAGES.length;
+      currentIndex = (idx + len) % len;
+
+      modalImg.src = ALL_IMAGES[currentIndex];
+      modalCaption.textContent = `${currentIndex + 1} / ${len}`;
+
+      if(!isModalOpen()) modal.classList.add("open");
+    }
+
+    function go(delta){
+      openAt(currentIndex + delta);
+    }
+
+    function closeModal(){
+      modal.classList.remove("open");
+      modalWrap?.classList.remove("is-single");
+    }
+
+    prevBtn.addEventListener("click", ()=> go(-1));
+    nextBtn.addEventListener("click", ()=> go(1));
+    closeBtn.addEventListener("click", ()=> closeModal());
+
+    // 썸네일 클릭 시 해당 인덱스로 오픈 (data-index 사용)
+    galleryEl.addEventListener("click", (e)=>{
+      const img = e.target.closest("img");
+      if(!img) return;
+      const idx = Number(img.dataset.index || 0);
+      openAt(idx);
+    });
+
+    // "사진 더 보기" 버튼: 전체 사진 뷰어를 첫 번째 사진부터 열기
+    const openAllPhotosBtn = document.getElementById("openAllPhotosBtn");
+    if(openAllPhotosBtn){
+      openAllPhotosBtn.addEventListener("click", ()=>{
+        openAt(0);
+      });
+    }
+
+    // 일정/장소 예식장 안내 사진 클릭 시 크게 보기 (갤러리와 같은 모달 재사용)
+    if(locationPhotoEl){
+      locationPhotoEl.addEventListener("click", ()=>{
+        modalWrap?.classList.add("is-single");
+        modalImg.src = locationPhotoEl.src;
+        modalCaption.textContent = "";
+        if(!isModalOpen()) modal.classList.add("open");
+      });
+    }
+
+    // 키보드(PC): 좌/우/ESC
+    document.addEventListener("keydown", (e)=>{
+      if(!isModalOpen()) return;
+      const single = modalWrap?.classList.contains("is-single");
+      if(!single && e.key === "ArrowLeft") go(-1);
+      if(!single && e.key === "ArrowRight") go(1);
+      if(e.key === "Escape") closeModal();
+    });
+
+    // 모달 바깥(검은 배경) 클릭 시 닫기
+    modal.addEventListener("click", (e)=>{
+      if(e.target === modal){
+        closeModal();
+      }
+    });
+
+    // 스와이프: 좌/우
+    let startX = null;
+    let startY = null;
+
+    modal.addEventListener("touchstart", (e)=>{
+      if(!isModalOpen()) return;
+      const t = e.touches[0];
+      startX = t.clientX;
+      startY = t.clientY;
+    }, {passive:true});
+
+    modal.addEventListener("touchend", (e)=>{
+      if(!isModalOpen() || startX === null) return;
+      const t = e.changedTouches[0];
+      const dx = t.clientX - startX;
+      const dy = t.clientY - startY;
+
+      // 세로 스크롤로 인한 오작동 방지: 가로 이동이 충분할 때만
+      if(!modalWrap?.classList.contains("is-single") && Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy) * 1.2){
+        if(dx < 0) go(1);   // 왼쪽으로 밀면 다음
+        else go(-1);        // 오른쪽으로 밀면 이전
+      }
+
+      startX = null;
+      startY = null;
+    }, {passive:true});
+
+
+    // 타임라인 + 초대글 카드 스크롤 등장 애니메이션
+    const fadeEls = document.querySelectorAll(".timeline-item, .invite-card");
+    if(fadeEls.length){
+      if("IntersectionObserver" in window){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(entry=>{
+            if(entry.isIntersecting){
+              entry.target.classList.add("visible");
+              io.unobserve(entry.target);
+            }
+          });
+        }, {threshold:0.2});
+        fadeEls.forEach(el=>io.observe(el));
+      }else{
+        // 오래된 브라우저에서는 그냥 다 보이게
+        fadeEls.forEach(el=>el.classList.add("visible"));
+      }
+    }
+
+    // 우리 이야기 섹션: 다 보고 화면에서 사라지면 자동 접기
+    const storyCard = document.querySelector(".story-card");
+    const storySection = storyCard ? storyCard.closest("section") : null;
+    if(storySection && "IntersectionObserver" in window){
+      let storyCollapsed = false;
+      const storyObserver = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(!entry.isIntersecting){
+            const rect = entry.boundingClientRect;
+            // 섹션 전체가 화면 위로 완전히 사라진 경우만 접기
+            if(rect.bottom < 0 && !storyCollapsed){
+              const prevScroll = window.scrollY;
+              const prevHeight = document.documentElement.scrollHeight;
+              storyCard.classList.add("collapsed");
+              storyCollapsed = true;
+              // 접으면 문서 높이가 줄어들어 scrollY가 그대로면 하단으로 튀는 현상 보정
+              requestAnimationFrame(()=>{
+                const nextHeight = document.documentElement.scrollHeight;
+                const delta = prevHeight - nextHeight;
+                if(delta > 0){
+                  window.scrollTo(0, Math.max(0, prevScroll - delta));
+                }
+              });
+            }
+          }
+        });
+      }, {threshold:0});
+      storyObserver.observe(storySection);
+
+      // 카드를 탭하면 다시 펼치기/접기
+      storyCard.addEventListener("click", ()=>{
+        storyCollapsed = !storyCollapsed;
+        storyCard.classList.toggle("collapsed", storyCollapsed);
+      });
+    }
+
+
+    // 계좌 버튼 복사
+    document.querySelectorAll("[data-copy]").forEach(btn=>{
+      btn.addEventListener("click", ()=> copyText(btn.getAttribute("data-copy")));
+    });
+
+    // init
+    setContacts();
+    setInterval(()=>{
+      const chip = $("ddayChip");
+      if (chip) chip.textContent = calcDday(CONFIG.weddingISO);
+    }, 60*1000);
+  </script>
+</body>
+</html>
